@@ -1,7 +1,7 @@
 {
   "home": {
-    "title": "Welcome, Manvi",
-    "subtitle": "This is your friend Shagun Bandi",
+    "title": "Welcome, Manvi Nirwal",
+    "subtitle": "Congratulations! This time it is done.",
     "logged": {
       "message": "You are logged in as user \"{{username}}\"."
     },
