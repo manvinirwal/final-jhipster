@@ -4,7 +4,7 @@ metadata:
   name: ui
   namespace: avengers
 spec:
-  replicas: 1
+  replicas: 3
   selector:
     matchLabels:
       app: ui
@@ -34,7 +34,7 @@ spec:
               done
       containers:
         - name: ui-app
-          image: shagunbandi/ui:3.0.0
+          image: shagunbandi/ui:4.0.0
           env:
             - name: SPRING_PROFILES_ACTIVE
               value: prod
