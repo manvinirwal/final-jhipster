@@ -20,7 +20,7 @@ export const Home = (props: IHomeProp) => {
           <Translate contentKey="home.title">Welcome, Manvi Nirwal</Translate>
         </h2>
         <p className="lead">
-          <Translate contentKey="home.subtitle">Congratulations! This time it is done.</Translate>
+          <Translate contentKey="home.subtitle">Congratulations! This time it is done.Be happy Now</Translate>
         </p>
         {account && account.login ? (
           <div>
