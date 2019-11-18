@@ -4,13 +4,13 @@ metadata:
   name: ui
   namespace: avengers
 spec:
-  replicas: 1
+  replicas: 
   selector:
     matchLabels:
       app: ui
       version: 'v1'
-   strategy:
-    type: RollingUpdate
+  strategy:
+    type: RollingUpdate 
   template:
     metadata:
       labels:
