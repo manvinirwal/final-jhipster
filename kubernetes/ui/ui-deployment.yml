@@ -10,7 +10,7 @@ spec:
       app: ui
       version: 'v1'
   strategy:
-    type: RollingUpdate 
+    type: Recreate 
   template:
     metadata:
       labels:
@@ -36,7 +36,7 @@ spec:
               done
       containers:
         - name: ui-app
-          image: shagunbandi/ui:4.0.0
+          image: shagunbandi/ui:5.0.0
           imagePullPolicy: Always
           env:
             - name: SPRING_PROFILES_ACTIVE
