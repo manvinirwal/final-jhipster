@@ -14,7 +14,7 @@ exports.config = {
     chromeOptions: {
         args: process.env.JHI_E2E_HEADLESS
           ? [ '--headless', '--disable-gpu', '--disable-dev-shm-usage','--window-size=800,600' ]
-          : [ '--disable-gpu', '--disable-dev-shm-usage','--window-size=800,600' ]
+          : [ '--disable-gpu', '--window-size=800,600' ]
     }
   },
 
