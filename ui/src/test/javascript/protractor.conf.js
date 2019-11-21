@@ -10,8 +10,8 @@ exports.config = {
   ],
 
   capabilities: {
-    browserName: 'chrome',
-    chromeOptions: {
+    'browserName': 'chrome',
+    'chromeOptions': {
         args:  ['--headless', '--disable-gpu', '--no-sandbox', '--disable-extensions', '--disable-dev-shm-usage']
     }
   },
