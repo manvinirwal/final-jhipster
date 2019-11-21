@@ -10,8 +10,8 @@ exports.config = {
   ],
 
   capabilities: {
-    'browserName': 'firfox',
-    'moz:firfoxOptions': {
+    'browserName': 'chrome',
+    'chrome': {
         args:  ['--headless', '--disable-gpu', '--no-sandbox', '--disable-extensions', '--disable-dev-shm-usage']
     }
   },
