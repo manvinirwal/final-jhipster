@@ -16,7 +16,7 @@ exports.config = {
     }
   },
 
-  directConnect: true,
+  directConnect: false,
 
   baseUrl: 'http://ui.avengers.34.67.38.135.nip.io',
   seleniumAddress: 'http://localhost:4444/wd/hub',
