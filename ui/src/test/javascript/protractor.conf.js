@@ -18,8 +18,8 @@ exports.config = {
 
   directConnect: true,
 
-  baseUrl: 'http://localhost:8050/',
-
+  baseUrl: 'http://ui.avengers.34.67.38.135.nip.io',
+  seleniumAddress: 'http://localhost:4444/wd/hub',
   framework: 'mocha',
 
   SELENIUM_PROMISE_MANAGER: false,
