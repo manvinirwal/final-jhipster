@@ -9,12 +9,14 @@ exports.config = {
     /* jhipster-needle-add-protractor-tests - JHipster will add protractors tests here */
   ],
 
-  
+  capabilities: {
+    'browserName': 'chrome',
+  },
 
- 
-  seleniumAddress:'http://10.128.15.236:4444/wd/hub',
+  directConnect: false,
+
   baseUrl: 'http://ui.avengers.34.67.38.135.nip.io',
- 
+  seleniumAddress:'http://10.128.15.236:4444/wd/hub',
   framework: 'mocha',
 
  // SELENIUM_PROMISE_MANAGER: false,
