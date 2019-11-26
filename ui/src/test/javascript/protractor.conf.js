@@ -10,22 +10,26 @@ exports.config = {
   ],
 
   capabilities: {
-    'browserName': 'chrome',
+    browserName: 'chrome',
+    chromeOptions: {
+	  binary: "/usr/bin/google-chrome-stable",
+        args: [ '--headless', '--disable-gpu', '--window-size=800,600', '--disable-gpu', '--window-size=800,600','--no-sandbox','--disable-dev-shm-usage' ]
+    }
   },
 
-  directConnect: false,
+  directConnect: true,
 
-  baseUrl: 'http://ui.avengers.34.67.38.135.nip.io',
-  seleniumAddress:'http://10.128.15.236:4444/wd/hub',
+  baseUrl: 'http://ui.shagun.34.67.38.135.nip.io/',
+
   framework: 'mocha',
 
- // SELENIUM_PROMISE_MANAGER: false,
+  SELENIUM_PROMISE_MANAGER: false,
 
   mochaOpts: {
-    reporter: 'spec',
-    slow: 3000,
-    ui: 'bdd',
-    timeout: 720000
+    reporter: 'mocha-spec-json-output-reporter',
+    //slow: 3000,
+    //ui: 'bdd',
+    //timeout: 720000
   },
 
   beforeLaunch () {
