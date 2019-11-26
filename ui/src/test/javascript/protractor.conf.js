@@ -12,7 +12,7 @@ exports.config = {
   
 
  
-  seleniumAddress:'http://10.128.15.236:4444/',
+  seleniumAddress:'http://10.128.15.236:4444/wd/hub',
   baseUrl: 'http://ui.avengers.34.67.38.135.nip.io',
  
   framework: 'mocha',
