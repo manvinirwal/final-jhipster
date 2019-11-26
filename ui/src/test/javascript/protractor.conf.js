@@ -11,18 +11,15 @@ exports.config = {
 
   capabilities: {
     'browserName': 'chrome',
-    'chrome': {
-        args:  ['--headless', '--disable-gpu', '--no-sandbox', '--disable-extensions', '--disable-dev-shm-usage']
-    }
   },
 
   directConnect: false,
 
   baseUrl: 'http://ui.avengers.34.67.38.135.nip.io',
-  seleniumAddress: 'http://localhost:4444/wd/hub',
+  seleniumAddress:'http://10.128.15.236:4444/',
   framework: 'mocha',
 
-  SELENIUM_PROMISE_MANAGER: false,
+ // SELENIUM_PROMISE_MANAGER: false,
 
   mochaOpts: {
     reporter: 'spec',
