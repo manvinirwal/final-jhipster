@@ -12,7 +12,7 @@ exports.config = {
   capabilities: {
     browserName: 'chrome',
     chromeOptions: {
-	  binary: "/usr/bin/google-chrome-stable",
+	  //binary: "/usr/bin/google-chrome-stable",
         args: [ '--headless', '--disable-gpu', '--window-size=800,600', '--disable-gpu', '--window-size=800,600','--no-sandbox','--disable-dev-shm-usage' ]
     }
   },
@@ -26,7 +26,13 @@ exports.config = {
   SELENIUM_PROMISE_MANAGER: false,
 
   mochaOpts: {
-    reporter: 'mocha-spec-json-output-reporter',
+     reporter: "mochawesome",
+     reporterOptions: {
+       reportDir: "mocha/reports",
+       overwrite: true,
+       html: false,
+       json: true
+    }
     //slow: 3000,
     //ui: 'bdd',
     //timeout: 720000
