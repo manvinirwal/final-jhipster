@@ -30,7 +30,7 @@ exports.config = {
      reporterOptions: {
        reportDir: "mocha/reports",
        overwrite: true,
-       html: false,
+       html: true,
        json: true
     }
     //slow: 3000,
